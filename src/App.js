@@ -23,16 +23,16 @@ function App() {
         </div>
         <div class=" w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow fontCustom text-white ">
-            <a onClick={executeScrollDash} class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            <a onClick={executeScrollDash} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
               Dashboard
             </a>
-            <a onClick={executeScrollDate} class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            <a onClick={executeScrollDate} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
               Sale Date
             </a>
-            <a onClick={executeScrollTeam} class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            <a onClick={executeScrollTeam} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
               Team
             </a>
-            <a onClick={executeScrollRoadmap} class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            <a onClick={executeScrollRoadmap} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
               Roadmap
             </a>
           </div>

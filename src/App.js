@@ -81,7 +81,7 @@ function App() {
           <h1 className="text-white fontCustom text-center text-9xl mt-16">
             Feb
           </h1>
-          <h1 className="text-white fontCustom text-center text-9xl mt-8">-</h1>
+          <h1 className="text-white fontCustom text-center text-9xl mt-8">26</h1>
         </div>
         <h1 ref={team} className="text-[#9a6d32] bg-[#161616] fontCustom text-center text-2xl ml-20 mr-20 mt-20 pt-6">
           Team

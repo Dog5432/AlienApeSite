@@ -1,6 +1,10 @@
 import "./App.css";
 import React, { useRef } from "react";
-import logo from "./Images/logo.png";
+import logo from "./Images/logo.png"
+import image184 from "./Images/image184.png";
+import image144 from "./Images/image144.png";
+import image132 from "./Images/image132.png";
+import image102 from "./Images/image102.png";
 
 function App() {
   const dash = useRef(null);
@@ -82,7 +86,7 @@ function App() {
             </p>
             <img
               className=" mt-16 "
-              src="https://gateway.pinata.cloud/ipfs/Qmdui6fbiE61Lcqc2FEAqS1D1TudJgpuenHxiK1eZCTYYK/102.png"
+              src={image102}
               alt=""
             ></img>
           </div>
@@ -115,7 +119,7 @@ function App() {
             </h1>{" "}
             <img
               className="mt-4 rt"
-              src="https://gateway.pinata.cloud/ipfs/Qmdui6fbiE61Lcqc2FEAqS1D1TudJgpuenHxiK1eZCTYYK/132.png"
+              src={image132}
               alt=""
             ></img>
             <a href="https://twitter.com/0xGrimmm">
@@ -129,7 +133,7 @@ function App() {
             </h1>{" "}
             <img
               className="mt-4 rt"
-              src="https://gateway.pinata.cloud/ipfs/Qmdui6fbiE61Lcqc2FEAqS1D1TudJgpuenHxiK1eZCTYYK/144.png"
+              src={image144}
               alt=""
             ></img>
             <a href="https://twitter.com/fablenft">
@@ -143,7 +147,7 @@ function App() {
             </h1>{" "}
             <img
               className="mt-4 rt"
-              src="https://gateway.pinata.cloud/ipfs/Qmdui6fbiE61Lcqc2FEAqS1D1TudJgpuenHxiK1eZCTYYK/184.png"
+              src={image184}
               alt=""
             ></img>
             <a href="https://twitter.com/Funkiersauce">

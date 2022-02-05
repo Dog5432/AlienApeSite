@@ -61,7 +61,7 @@ function App() {
         </div>
       </nav>
       <div ref={dash} className="bg-[#212529] pt-10 pb-24">
-        <div className="justify-between bg-[#161616] p-6 ml-20 mr-20">
+        <div className="justify-between bg-[#161616] p-6 ml-4 mr-4 sm:ml-16 sm:mr-16">
           <div className="justify-items-center grid">
             <h1 className="text-[#9a6d32] fontCustom text-center text-2xl">
               introducing Alien Apes!
@@ -94,10 +94,10 @@ function App() {
           <h1 className="text-[#9a6d32] fontCustom text-center text-2xl">
             Coming Soon!
           </h1>
-          <h1 className="text-white fontCustom text-center text-9xl mt-16">
+          <h1 className="text-white fontCustom text-center text-4xl sm:text-9xl mt-16">
             Feb
           </h1>
-          <h1 className="text-white fontCustom text-center text-9xl mt-8">
+          <h1 className="text-white fontCustom text-center text-4xl sm:text-9xl mt-8">
             26
           </h1>
         </div>
@@ -107,8 +107,8 @@ function App() {
         >
           Team
         </h1>
-        <div className="justify-items-center lg:justify-between flex bg-[#161616] p-6 ml-5 mr-5 lg:ml-20 lg:mr-20">
-          <div className="justify-items-center  grid ml-32 ">
+        <div className="justify-items-center lg:justify-between sm:flex bg-[#161616] p-6 ml-5 mr-5 lg:ml-20 lg:mr-20">
+          <div className="justify-items-center  grid sm:ml-32 ">
             {" "}
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8 ">
               Dog
@@ -136,7 +136,7 @@ function App() {
               <i className="fab fa-twitter text-white mt-4"></i>
             </a>
           </div>
-          <div className="justify-items-center grid mr-32">
+          <div className="justify-items-center grid sm:mr-32">
             {" "}
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8 ">
               Sauce
@@ -153,13 +153,13 @@ function App() {
         </div>
         <div ref={roadmap} className="justify-items-center grid">
           <div className="justify-between grid lg:ml-20 lg:mr-20 mt-20">
-            <h1 className="text-[#9a6d32] fontCustom text-center text-7xl">
+            <h1 className="text-[#9a6d32] fontCustom text-center text-4xl sm:text-7xl">
               Roadmap
             </h1>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-12">
               Phase 1
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-96 lg:mr-96 mt-8">
               We will market and collaborate with many different sites like
               rarity.tools. We will create a discord and start building a
               community.
@@ -167,21 +167,21 @@ function App() {
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 2
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-96 lg:mr-96 mt-8">
               Site will be launched with a set of 5000 NFTs on the Etheruem
               blockchain. Mint price will be 0.055 eth.
             </div>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 3
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-96 lg:mr-96 mt-8">
               Sales bot will be created on both twitter and discord to further
               community growth.
             </div>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 4
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-96 lg:mr-96 mt-8">
               We will collaborate with up and coming NFTs to provide value to
               our holders as well as exclusive perks in our community given to
               holders.
@@ -189,7 +189,7 @@ function App() {
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 5
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-96 lg:mr-96 mt-8">
               Roadmap V2 is announced to further bring value to holders.
             </div>
           </div>

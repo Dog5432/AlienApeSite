@@ -1,45 +1,58 @@
 import "./App.css";
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import logo from "./Images/logo.png";
 
 function App() {
+  const dash = useRef(null);
+  const date = useRef(null);
+  const team = useRef(null);
+  const roadmap = useRef(null);
 
-  const dash = useRef(null)
-  const date = useRef(null)
-  const team = useRef(null)
-  const roadmap = useRef(null)
-
-  const executeScrollDash = () => dash.current.scrollIntoView()  
-  const executeScrollDate = () => date.current.scrollIntoView()  
-  const executeScrollTeam = () => team.current.scrollIntoView()  
-  const executeScrollRoadmap = () => roadmap.current.scrollIntoView()  
-
+  const executeScrollDash = () => dash.current.scrollIntoView();
+  const executeScrollDate = () => date.current.scrollIntoView();
+  const executeScrollTeam = () => team.current.scrollIntoView();
+  const executeScrollRoadmap = () => roadmap.current.scrollIntoView();
 
   return (
     <div className="App">
-      <nav class=" flex justify-between flex-wrap bg-[#161616] p-6 ">
-        <div class=" inline-block flex-shrink-0 mr-6 w-80">
+      <nav class="  justify-center text-center lg:text-left grid justify-center lg:flex  lg:justify-between flex-wrap bg-[#161616] p-6 ">
+        <div class=" lg:ml-0 lg:inline-block flex-shrink-0 lg:mr-6 w-80">
           <img src={logo} alt=""></img>
         </div>
         <div class=" w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow fontCustom text-white ">
-            <a onClick={executeScrollDash} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            <p
+              onClick={executeScrollDash}
+
+              class="block mt-4 lg:inline-block lg:mt-0 lg:mr-10 text-center cursor-pointer buttonHover"
+            >
               Dashboard
-            </a>
-            <a onClick={executeScrollDate} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            </p>
+            <p
+              onClick={executeScrollDate}
+
+              class="block mt-4 lg:inline-block lg:mt-0 lg:mr-10 text-center cursor-pointer buttonHover"
+            >
               Sale Date
-            </a>
-            <a onClick={executeScrollTeam} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            </p>
+            <p
+              onClick={executeScrollTeam}
+
+              class="block mt-4 lg:inline-block lg:mt-0 lg:mr-10 text-center cursor-pointer buttonHover"
+            >
               Team
-            </a>
-            <a onClick={executeScrollRoadmap} href="/#" class="block mt-4 lg:inline-block lg:mt-0 mr-10 text-center cursor-pointer buttonHover">
+            </p>
+            <p
+              onClick={executeScrollRoadmap}
+              class="block mt-4 lg:inline-block lg:mt-0 lg:mr-10 text-center cursor-pointer buttonHover"
+            >
               Roadmap
-            </a>
+            </p>
           </div>
           <a href="https://twitter.com/fablenft">
-            <i className="fab fa-twitter text-white mr-6"></i>
+            <i className="ml-4 fab fa-twitter text-white mr-6 mt-4 lg:mt-0"></i>
           </a>
-          <a href="https://discord.gg">
+          <a href="https://discord.com/invite/TqW67g7R6n">
             <i className="fab fa-discord text-white mr-6"></i>
           </a>
           <a href="https://opensea.io">
@@ -74,22 +87,30 @@ function App() {
             ></img>
           </div>
         </div>
-        <div ref={date} className="justify-between bg-[#161616] p-6 ml-96 mr-96 mt-20">
+        <div
+          ref={date}
+          className="justify-between ml-20 mr-20 bg-[#161616] p-6 lg:ml-96  lg:mr-96 mt-20"
+        >
           <h1 className="text-[#9a6d32] fontCustom text-center text-2xl">
             Coming Soon!
           </h1>
           <h1 className="text-white fontCustom text-center text-9xl mt-16">
             Feb
           </h1>
-          <h1 className="text-white fontCustom text-center text-9xl mt-8">26</h1>
+          <h1 className="text-white fontCustom text-center text-9xl mt-8">
+            26
+          </h1>
         </div>
-        <h1 ref={team} className="text-[#9a6d32] bg-[#161616] fontCustom text-center text-2xl ml-20 mr-20 mt-20 pt-6">
+        <h1
+          ref={team}
+          className="text-[#9a6d32] bg-[#161616] fontCustom text-center text-2xl ml-5 mr-5 lg:ml-20 lg:mr-20 mt-20 pt-6"
+        >
           Team
         </h1>
-        <div className="justify-between flex bg-[#161616] p-6 ml-20 mr-20">
-          <div className="justify-items-center grid ml-32">
+        <div className="justify-items-center lg:justify-between flex bg-[#161616] p-6 ml-5 mr-5 lg:ml-20 lg:mr-20">
+          <div className="justify-items-center  grid ml-32 ">
             {" "}
-            <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
+            <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8 ">
               Dog
             </h1>{" "}
             <img
@@ -131,44 +152,61 @@ function App() {
           </div>
         </div>
         <div ref={roadmap} className="justify-items-center grid">
-          <div className="justify-between grid ml-20 mr-20 mt-20">
+          <div className="justify-between grid lg:ml-20 lg:mr-20 mt-20">
             <h1 className="text-[#9a6d32] fontCustom text-center text-7xl">
               Roadmap
             </h1>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-12">
               Phase 1
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-96 mr-96 mt-8">
-              Set of 5000 NFTs created and deployed on Ethereum Network at a
-              mint price of 0.055.
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+              We will market and collaborate with many different sites like
+              rarity.tools. We will create a discord and start building a
+              community.
             </div>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 2
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-96 mr-96 mt-8">
-              Creation of sales bot inside discord and community building.
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+              Site will be launched with a set of 5000 NFTs on the Etheruem
+              blockchain. Mint price will be 0.055 eth.
             </div>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 3
             </h1>
-            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-96 mr-96 mt-8">
-              Collaboration with several websites such as rarity.tools.{" "}
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+              Sales bot will be created on both twitter and discord to further
+              community growth.
+            </div>
+            <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
+              Phase 4
+            </h1>
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+              We will collaborate with up and coming NFTs to provide value to
+              our holders as well as exclusive perks in our community given to
+              holders.
+            </div>
+            <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
+              Phase 5
+            </h1>
+            <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-52 mr-52 lg:ml-96 lg:mr-96 mt-8">
+              Roadmap V2 is announced to further bring value to holders.
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-between flex-wrap bg-[#161616] p-16">
+      <div className="flex justify-items-center lg:justify-between flex-wrap grid bg-[#161616] p-16">
         {" "}
-        <a href="legaldisclaimer.com">
-        <h1 className="text-[#9a6d32] fontCustom text-center text-lg buttonHover">
-              Legal Disclaimer
-            </h1>
-            </a>
-        <div class=" w-full block flex-grow lg:flex lg:items-center text-right mt-8">
+        <a href="https://discord.gg/EmScZ6ysrA">
+          <h1 className="text-[#9a6d32] fontCustom text-center text-lg buttonHover">
+            Legal Disclaimer
+          </h1>
+        </a>
+        <div class=" w-full block flex-grow lg:flex lg:items-center text-center lg:text-right mt-8">
           <a href="https://twitter.com/fablenft">
             <i className="fab fa-twitter text-white mr-6"></i>
           </a>
-          <a href="https://discord.gg">
+          <a href="https://discord.com/invite/TqW67g7R6n">
             <i className="fab fa-discord text-white mr-6"></i>
           </a>
           <a href="https://opensea.io">

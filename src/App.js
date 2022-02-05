@@ -72,7 +72,7 @@ function App() {
             </h1>
             <p className="text-white fontCustom text-center mt-16 text-sm">
               Alien Apes are a brand new set of 5000 NFTs ready to invade the
-              Ethereum blockchain.
+              Solana blockchain.
             </p>
             <p className="text-white fontCustom text-center  mt-16 text-sm">
               Our NFTs are created from over 100 traits and are procedurally
@@ -172,8 +172,8 @@ function App() {
               Phase 2
             </h1>
             <div className="justify-between text-white fontCustom bg-[#161616] p-6 ml-12 mr-12 sm:ml-52 sm:mr-52 lg:ml-80 lg:mr-80 mt-8">
-              Site will be launched with a set of 5000 NFTs on the Etheruem
-              blockchain. Mint price will be 0.055 eth.
+              Site will be launched with a set of 5000 NFTs on the Solana
+              blockchain. Mint price will be 0.2 SOL.
             </div>
             <h1 className="text-[#9a6d32] fontCustom text-center text-lg mt-8">
               Phase 3
